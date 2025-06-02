@@ -1,0 +1,36 @@
+Only testProjects code 
+
+using PracticeDesignPatterns;
+using PracticeDesignPatterns.Model;
+using Xunit;
+
+namespace ReportGeneratorTests
+{
+    public class ReportGeneratorTests
+    {
+        [Fact]
+        public void Test1()
+        {
+            //arrange
+            var report = new ReportGenerator();
+
+            //act
+            report.AddUserId(1233);
+
+            //assert
+            Assert.Equal(1233, report.Report.UserId);
+
+            var report2= new ReportGenerator();
+
+            report2.AddUserName("Suriya");
+
+            Assert.Equal("Suriya",report2.Report.UserName);
+
+            var report3= new ReportGenerator();
+
+            report3.AddResult(Result.NotSet);
+
+            Assert.Equal(Result.NotSet, report3.Report.result);
+        }
+    }
+}
