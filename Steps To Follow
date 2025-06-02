@@ -1,0 +1,12 @@
+
+Steps to Do :
+
+1. First Create the project (Xunit) 
+2. Class will be created having method called Unittest1 ( Rename this based on what we need )
+3. Then add the reference to the project that you are going to test from this project
+  { command : dotnet add ./ReportGeneratorTests/ReportGeneratorTests.csproj reference ./PracticeDesignPatterns/PracticeDesignPatterns.csproj 
+     TestProjectName -> Testclass ->  ./ReportGeneratorTests/ReportGeneratorTests.csproj
+     TargetProject -> Targetclass ->   ./PracticeDesignPatterns/PracticeDesignPatterns.csproj 
+
+  Syntax =>  dotnet add ./{TestProject}/{TestClass} .csproj   reference   ./{TargetProj}/{TargetClass} .csproj
+ 
